@@ -5,3 +5,6 @@
 #
 #   movies = Movie.create([{ name: "Star Wars" }, { name: "Lord of the Rings" }])
 #   Character.create(name: "Luke", movie: movies.first)
+
+user = ['James Kent', 'Phineas Carl', 'Pascal Mwai', 'Darrel Jones']
+users.each{|user| User.create(name: user, age: 30 description: "I am a happy client #{user}.")}
