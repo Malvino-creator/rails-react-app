@@ -7,10 +7,10 @@
 #   Character.create(name: "Luke", movie: movies.first)
 
 user = ['James Kent', 'Phineas Carl', 'Pascal Mwai', 'Darrel Jones']
-users.each{|user| User.create(name: user, age: [0...50], description: "I am a happy client #{user}.")}
+users.each{|user| User.create(name: user, password: [0...50], description: "I am a happy client #{user}.")}
 
 doctor = ['Praheesh Badiana', 'Paul Chepkwony', 'Oyoo Fambala', 'David Hayes']
 doctors.each{|doctor| Doctor.create(name: doctor, comments: "Prescribed RTI medication #{doctor}.")}
 
-review = ['Excellent', 'Good', 'Satisffactory', 'Poor']
+review = ['Excellent', 'Good', 'Satisfactory', 'Poor']
 reviews.each{|review| Review.create(name: review, comments: "Excellent #{review}.")}
