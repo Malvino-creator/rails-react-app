@@ -1,4 +1,4 @@
 class User < ApplicationRecord
     has many :reviews
-    belongs_to :doctor
+    validates :name, presence: true :uniqueness: true
 end
