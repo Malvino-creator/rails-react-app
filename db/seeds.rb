@@ -39,21 +39,3 @@ reviews = Review.create([
     }
 ])
 
-doctors = Doctor.all([
-    {
-        name: "Praheesh Badiani"
-        specialization: "Paedetrician"
-    },
-    {
-        name: "Paul Mwai"
-        specialization: "Bones and Ligaments"
-    },
-    {
-        name: "David Hayes"
-        specialization: "Soft Tissue Injuries"
-    },
-    {
-        name: "Oyoo Fambala"
-        specialization: "Gynaecology"
-    }
-])
