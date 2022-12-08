@@ -1,16 +1,59 @@
 # This file should contain all the record creation needed to seed the database with its default values.
 # The data can then be loaded with the bin/rails db:seed command (or created alongside the database with db:setup).
-#
-# Examples:
-#
-#   movies = Movie.create([{ name: "Star Wars" }, { name: "Lord of the Rings" }])
-#   Character.create(name: "Luke", movie: movies.first)
 
-user = ['James Kent', 'Phineas Carl', 'Pascal Mwai', 'Darrel Jones']
-users.each{|user| User.create(name: user, password: [0...50], description: "I am a happy client #{user}.")}
+users = Users.create([
+    {
+        name: "James Kent"
+        password: "321#3"
+        
+    },
+    {
+        name: "Phineas Carl"
+        password: "654*"
+        
+    },
+    {
+        name: "Pascal Mwai"
+        password: "078$"
+        
+    },
+    {
+        name: "Darrel Jones"
+        password: "765%"
+        
+    }
+])
 
-doctor = ['Praheesh Badiana', 'Paul Chepkwony', 'Oyoo Fambala', 'David Hayes']
-doctors.each{|doctor| Doctor.create(name: doctor, comments: "Prescribed RTI medication #{doctor}.")}
+reviews = Review.create([
+    {
+        comments: "I love the agility in attending to the patients"
+    },
+    {
+        comments: "I was satisfied by the level of professionalism accorded"
+    },
+    {
+        comments: "For me it was the ease in getting treatment. I used my health insurance card without any hassles."
+    },
+    {
+        comments: "It was the state of the art infrastructure that was a maor highlight for me"
+    }
+])
 
-review = ['Excellent', 'Good', 'Satisfactory', 'Poor']
-reviews.each{|review| Review.create(name: review, comments: "Excellent #{review}.")}
+doctors = Doctor.all([
+    {
+        name: "Praheesh Badiani"
+        specialization: "Paedetrician"
+    },
+    {
+        name: "Paul Mwai"
+        specialization: "Bones and Ligaments"
+    },
+    {
+        name: "David Hayes"
+        specialization: "Soft Tissue Injuries"
+    },
+    {
+        name: "Oyoo Fambala"
+        specialization: "Gynaecology"
+    }
+])
