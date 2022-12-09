@@ -4,10 +4,11 @@ Rails.application.routes.draw do
   # Defines the root path route ("/")
   # root "articles#index"
   #resources :users, only: [:index, :create, :destroy, :update]
-  get '/login', to: 'users#index'
-  get '/review/:id', to: 'users#show'
-  post '/reviews', to: 'users#create'
-  delete '/review/:id', to: 'user#delete'
+  get '/users', to: 'users#index'
+  get '/reviews', to: 'reviews#index'
+  post '/reviews', to: 'reviews#create'
+  delete '/reviews/:id', to: 'reviews#delete'
+  get '/reviews/:id',  to: 'reviews#show'
 
   
 end

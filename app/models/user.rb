@@ -1,3 +1,3 @@
 class User < ApplicationRecord
-    has many :reviews
+    has_many :reviews
 end
