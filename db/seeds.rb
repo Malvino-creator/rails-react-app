@@ -32,6 +32,12 @@ reviews = Review.create
     {
         comment: "State of the art infrastructures that was a major highlight"
     },
+    {
+       comment: "really good, i like how i can change up the style." 
+    },
+    {
+        comment: "really good, i like how i can change up the style."
+    }
 ])
         
 puts "done seeding"
